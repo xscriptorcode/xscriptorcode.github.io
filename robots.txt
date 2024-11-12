@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://xscriptorcode.github.io
+
+# Sitemaps
+Sitemap: https://xscriptorcode.github.io/sitemap.xml
