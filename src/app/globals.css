@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0; transform: scale(0.9); }
+  50% { opacity: 1; transform: scale(1.1); }
+}
+
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 25ch; 
+  }
+}
+
+@keyframes blinkCursor {
+  0%, 100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #fbbf24;
+  }
+}
+
+.typing {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #fbbf24;
+  width: 0;
+  animation:
+    typewriter 3.5s steps(25, end) forwards,
+    blinkCursor 0.8s step-end 8 forwards;
+}
+
+.ripple {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(184, 156, 108, 0.15); 
+  transform: scale(1) rotate(45deg); 
+  border-radius: 0; 
+  pointer-events: none;
+  animation: ripple-wave 0.7s ease-out forwards;
+}
+
+@keyframes ripple-wave {
+  from {
+    transform: scale(1) rotate(45deg);
+    opacity: 0.3;
+  }
+  to {
+    transform: scale(6) rotate(45deg);
+    opacity: 0;
+  }
+}
