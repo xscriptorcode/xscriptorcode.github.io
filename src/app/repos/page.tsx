@@ -23,12 +23,12 @@ export default async function ReposPage() {
   const repos = await getRepos();
 
   return (
-    <main className="min-h-screen px-4 py-10 bg-gradient-to-br from-black via-gray-900 to-black text-white">
+    <main className="min-h-screen px-4 py-10 text-white">
       <Burbujas />
-
+      
       <h1
-        className={`${Roboto_font.className} text-4xl font-bold mb-10 text-amber-400 text-center typing mx-auto`}
-      >
+  className={`${Roboto_font.className} text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-10 text-amber-400 text-center mx-auto leading-tight`}
+>
         Documentation/Experience
       </h1>
 
