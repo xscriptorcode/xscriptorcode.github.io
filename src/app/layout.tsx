@@ -27,16 +27,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <TransitionProvider>
+      
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${PagesStyles.background} antialiased`}
       >
+        <TransitionProvider>
         <Navbar />
         
         {children}
+        </TransitionProvider>
       </body>
       
-        </TransitionProvider>
     </html>
   );
 }
