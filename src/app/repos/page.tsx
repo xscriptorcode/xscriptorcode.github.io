@@ -1,5 +1,6 @@
 import Burbujas from "../components/burbujas";
 import { Roboto_font } from "@/app/components/fonts";
+import CustomRippleCursor from "../components/CustomCursor";
 
 // Tipo para cada repositorio de GitHub
 interface GitHubRepo {
@@ -25,7 +26,7 @@ export default async function ReposPage() {
   return (
     <main className="min-h-screen px-4 py-10 text-white">
       <Burbujas />
-      
+      <CustomRippleCursor />
       <h1
   className={`${Roboto_font.className} typing text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-10 text-amber-400 text-center mx-auto leading-tight`}
 >
