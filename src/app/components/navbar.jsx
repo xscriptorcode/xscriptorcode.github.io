@@ -15,7 +15,7 @@ const links = [
   { id: "home", url: "/", title: <HomeIcon /> },
   { id: "github", url: "/repos", title: <GitHubIcon /> },
   { id: "contact", url: "/contact", title: <ContactIcon /> },
-  { id: "portfolio", url: "/portafolio", title: <PortfolioIcon /> },
+  { id: "portfolio", url: "/portfolio", title: <PortfolioIcon /> },
   { id: "resources", url: "/resources", title: <ResourcesIcon /> },
   { id: "xscriptor.com", url: "https://xscriptor.com", title: <XscriptorIcon /> },
 ];

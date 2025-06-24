@@ -1,6 +1,6 @@
 
-import CustomRippleCursor from "./components/CustomCursor";
-import { PagesStyles } from "./components/pagesstyles";
+import CustomRippleCursor from "@/app/components/CustomCursor";
+import { PagesStyles } from "@/app/components/pagesstyles";
 
 export default function Home() {
   return (
