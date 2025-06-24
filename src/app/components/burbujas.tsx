@@ -33,30 +33,27 @@ export default function Burbujas({ count = 6 }: { count?: number }) {
   useEffect(() => {
     const initial = Array.from({ length: count }).map((_, i) => generateBubble(i));
     setBubbles(initial);
-
-    const interval = setInterval(() => {
-      setBubbles((prev) =>
-        prev.map((b) => generateBubble(b.id))
-      );
-    }, 8000);
-
-    return () => clearInterval(interval);
   }, [count]);
 
-  if (bubbles.length === 0) return null;
+  const handleAnimationEnd = (id: number) => {
+    setBubbles((prev) =>
+      prev.map((b) => (b.id === id ? generateBubble(id) : b))
+    );
+  };
 
   return (
     <>
       {bubbles.map((bubble) => (
         <div
           key={bubble.id}
-          className={`absolute rounded-full ${bubble.color} ${bubble.blur} ${bubble.opacity} z-0`}
+          onAnimationEnd={() => handleAnimationEnd(bubble.id)}
+          className={`absolute rounded-full ${bubble.color} ${bubble.blur} ${bubble.opacity} z-0 pointer-events-none`}
           style={{
             top: bubble.top,
             left: bubble.left,
             width: bubble.size,
             height: bubble.size,
-            animation: `fadeInOut ${bubble.animationDuration} ease-in-out infinite`,
+            animation: `fadeInOut ${bubble.animationDuration} ease-in-out`,
           }}
         />
       ))}

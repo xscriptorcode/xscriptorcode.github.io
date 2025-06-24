@@ -19,17 +19,22 @@ const links = [
 
 const Navbar = () => {
   return (
-    <div className="w-full flex items-center justify-center gap-8 px-4 py-2 
-      backdrop-blur-md bg-black/30 border-b border-white/10 
-      text-yellow-400 text-xl z-20">
-      {links.map((link) => (
-        <NavLink
-          link={link}
-          key={link.id}
-          className="text-red-700 hover:text-yellow-300 hover:drop-shadow-[0_0_8px_#facc15] transition duration-300"
-        />
-      ))}
-    </div>
+    <div className="w-full flex justify-center px-2">
+  <div className="inline-flex items-center justify-center gap-4
+    rounded-2xl border border-white/30 bg-white/10 backdrop-blur-lg backdrop-saturate-200 shadow-lg
+    px-2 py-2 text-yellow-400 text-xl z-20 transition-all">
+    
+    {links.map((link) => (
+      <NavLink
+        link={link}
+        key={link.id}
+        className="text-red-700 hover:text-yellow-300 hover:drop-shadow-[0_0_8px_#facc15] transition duration-300"
+      />
+    ))}
+  </div>
+</div>
+
+
   );
 };
 

@@ -12,8 +12,7 @@ const TransitionProvider = ({ children }: { children: React.ReactNode }) => {
         key={pathName}
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: -10 }}
-        transition={{ duration: 1.5, ease: "easeInOut" }}
+        transition={{ duration: 0.5, ease: "easeIn" }}
       >
         {children}
       </motion.div>
