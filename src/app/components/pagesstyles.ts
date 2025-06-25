@@ -7,5 +7,7 @@ export const PagesStyles = {
     navstyles: "inline-flex items-center justify-center gap-4 rounded-2xl border border-white/30 bg-white/10 backdrop-blur-lg backdrop-saturate-200 shadow-lg px-2 py-2 text-yellow-400 text-xl z-20 transition-all",
     navbariconsstyles: "text-blue-200 hover:text-yellow-300 hover:drop-shadow-[0_0_8px_#facc15] transition duration-300",
     /*Footer*/
-    footerStyles: "text-center py-6 text-sm text-gray-400"
+    footerStyles: "text-center py-6 text-sm text-gray-400",
+    /* Main */
+    mainContainer: "min-h-screen px-4 py-10"
 };

@@ -1,6 +1,7 @@
 'use client';
 import CustomRippleCursor from "./components/CustomCursor";
 import DecryptedText from "./components/DecryptedText";
+import { PagesStyles } from "./components/pagesstyles";
 
 
 
@@ -9,8 +10,8 @@ export default function Home() {
     <div>
       <CustomRippleCursor />
 
-      <main>
-        <div className="text-3xl text-amber-50">
+      <main className={`${PagesStyles.mainContainer}`}>
+        <h1 className={`${PagesStyles.titles}`}>
           <DecryptedText
             text="Xscriptor"
             animateOn="view"
@@ -18,7 +19,7 @@ export default function Home() {
             revealDirection="center"
             speed={60}
             maxIterations={20}
-            className="text-amber-400"
+            className=""
             encryptedClassName="text-gray-500"
             parentClassName="text-4xl font-bold tracking-wide"
           />
@@ -29,7 +30,7 @@ export default function Home() {
             revealDirection="center"
             speed={60}
             maxIterations={20}
-            className="text-amber-400"
+            className=""
             encryptedClassName="text-gray-500"
             parentClassName="text-4xl font-bold tracking-wide"
           />
@@ -40,11 +41,11 @@ export default function Home() {
             revealDirection="center"
             speed={60}
             maxIterations={20}
-            className="text-amber-400"
+            className=""
             encryptedClassName="text-gray-500"
             parentClassName="text-4xl font-bold tracking-wide"
           />
-        </div>
+        </h1>
       </main>
     </div>
   );

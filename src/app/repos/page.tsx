@@ -4,6 +4,7 @@ import CustomRippleCursor from "../components/CustomCursor";
 import { PagesStyles } from "../components/pagesstyles";
 import RepoImage from "../components/RepoImage";
 
+
 interface GitHubRepo {
   id: number;
   name: string;
@@ -25,14 +26,14 @@ export default async function ReposPage() {
   const repos = await getRepos();
 
   return (
-    <main className="min-h-screen px-4 py-10 text-white">
+    <main className={`${PagesStyles.mainContainer}`}>
       <Burbujas />
       <CustomRippleCursor />
       <h1 className={`${Roboto_font.className} typing ${PagesStyles.titles}`}>
         Projects...
       </h1>
 
-      <div className="fadeInUp grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto px-4">
+      <div className="animate-fade-in-up grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto px-4">
         {repos.map((repo: GitHubRepo) => (
           <a
             key={repo.id}
