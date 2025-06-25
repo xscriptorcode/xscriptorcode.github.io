@@ -1,8 +1,9 @@
 import Burbujas from "../components/burbujas";
 import { Roboto_font } from "@/app/components/fonts";
 import CustomRippleCursor from "../components/CustomCursor";
+import { PagesStyles } from "../components/pagesstyles";
+import RepoImage from "../components/RepoImage";
 
-// Tipo para cada repositorio de GitHub
 interface GitHubRepo {
   id: number;
   name: string;
@@ -27,10 +28,8 @@ export default async function ReposPage() {
     <main className="min-h-screen px-4 py-10 text-white">
       <Burbujas />
       <CustomRippleCursor />
-      <h1
-  className={`${Roboto_font.className} typing text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-10 text-amber-400 text-center mx-auto leading-tight`}
->
-        Documentation/Experience
+      <h1 className={`${Roboto_font.className} typing ${PagesStyles.titles}`}>
+        Projects...
       </h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto px-4">
@@ -42,6 +41,8 @@ export default async function ReposPage() {
             rel="noopener noreferrer"
             className={`${Roboto_font.className} rounded-2xl p-8 border border-white/10 bg-white/10 backdrop-blur-lg backdrop-saturate-150 shadow-md transition-all duration-300 hover:shadow-yellow-400/40 hover:border-yellow-300/30 hover:text-yellow-300`}
           >
+            <RepoImage repoName={repo.name} />
+
             <h2 className="relative text-base font-semibold mb-2 transition-colors duration-300 hover:text-yellow-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-yellow-300 after:transition-all after:duration-300">
               {repo.name}
             </h2>

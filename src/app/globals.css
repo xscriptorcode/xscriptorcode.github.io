@@ -48,7 +48,7 @@ body {
     width: 0;
   }
   to {
-    width: 25ch; 
+    width: 10ch; 
   }
 }
 
@@ -67,8 +67,8 @@ body {
   border-right: 2px solid #fbbf24;
   width: 0;
   animation:
-    typewriter 3.5s steps(25, end) forwards,
-    blinkCursor 0.8s step-end 8 forwards;
+    typewriter 1.5s steps(20, end) forwards,
+    blinkCursor 0.7s step-end 10 forwards;
 }
 
 .ripple {
