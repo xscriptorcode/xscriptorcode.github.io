@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/app/components/navbar";
-import TransitionProvider from "@/app/components/transitionProvider";
 import { PagesStyles } from "./components/pagesstyles";
 import Footer from "./components/footer";
 
@@ -34,9 +33,7 @@ export default function RootLayout({
       >
         
         <Navbar />
-        <TransitionProvider>
         {children}
-        </TransitionProvider>
         <Footer />
       </body>
       

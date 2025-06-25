@@ -32,7 +32,7 @@ export default async function ReposPage() {
         Projects...
       </h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto px-4">
+      <div className="fadeInUp grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto px-4">
         {repos.map((repo: GitHubRepo) => (
           <a
             key={repo.id}
@@ -48,7 +48,7 @@ export default async function ReposPage() {
             </h2>
 
             <p className="text-xs text-gray-200">
-              {repo.description || "Sin descripción"}
+              {repo.description || "There's no description"}
             </p>
           </a>
         ))}
