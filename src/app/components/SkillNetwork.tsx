@@ -35,7 +35,6 @@ export default function SkillNetwork() {
         className="object-cover grayscale-500 contrast-125 opacity-80 rounded-2xl z-0"
       />
 
-      {/* Líneas entre nodos (solo desde sm hacia arriba) */}
       <svg className="absolute w-full h-full pointer-events-none z-10 hidden sm:block">
         {skills.map((from, i) =>
           skills.map((to, j) => {
@@ -57,7 +56,6 @@ export default function SkillNetwork() {
         )}
       </svg>
 
-      {/* Nodos visuales (solo en pantallas medianas o más) */}
       <div className="hidden sm:block">
         {skills.map((skill, index) => (
           <div
@@ -74,7 +72,6 @@ export default function SkillNetwork() {
         ))}
       </div>
 
-      {/* Lista responsiva en móviles */}
       <ul className="flex flex-col gap-2 sm:hidden absolute top-0 left-0 w-full h-full overflow-y-auto p-4 z-20 bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl shadow-inner">
         <h3 className="text-white text-lg font-semibold mb-2">Skills</h3>
         {skills.map((skill, index) => (
@@ -88,7 +85,6 @@ export default function SkillNetwork() {
         ))}
       </ul>
 
-      {/* Mensaje final */}
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-sm text-white text-center px-4 py-2 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 shadow-sm">
         Collaborating globally through <strong>remote work</strong>
       </div>
