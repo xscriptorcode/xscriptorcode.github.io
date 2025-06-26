@@ -24,7 +24,7 @@ export default function Home() {
 
             <div className="flex-1 relative p-6 lg:pl-12 shadow-md min-h-[224px] flex flex-col justify-start">
 
-              <h1 className={`${PagesStyles.titles} block text-center lg:hidden mt-1`}>
+              <h1 className={`${PagesStyles.titles} ${Roboto_font.className} block text-right lg:hidden absolute -top-24 right-1`}>
                 <DecryptedText
                   text="scriptor"
                   animateOn="view"
