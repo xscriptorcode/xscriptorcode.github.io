@@ -109,9 +109,10 @@ export default function Home() {
 
           </div>
 
-          <div className="w-full max-w-3xl">
-          <SkillNetwork />
-        </div>
+          <div className="w-full flex justify-center lg:mt-16">
+  <SkillNetwork />
+</div>
+
 
         </div>
       </main>

@@ -111,3 +111,21 @@ body {
 .animate-float {
   animation: float 8s ease-in-out infinite;
 }
+
+
+/*Map lines Animation*/
+
+@keyframes drawLine {
+  from {
+    stroke-dashoffset: 100;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.animated-line {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  animation: drawLine 1s ease-out forwards;
+}
