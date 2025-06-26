@@ -99,7 +99,7 @@ export default function Home() {
                   revealDirection="center"
                   speed={1}
                   maxIterations={5}
-                  encryptedClassName="text-red-500 animate-pulse"  
+                  encryptedClassName="text-red-500 animate-pulse"
                   className="text-white transition-colors duration-300"
                   parentClassName="tracking-wide"
                 />
@@ -110,8 +110,8 @@ export default function Home() {
           </div>
 
           <div className="w-full flex justify-center lg:mt-16">
-  <SkillNetwork />
-</div>
+            <SkillNetwork />
+          </div>
 
 
         </div>
