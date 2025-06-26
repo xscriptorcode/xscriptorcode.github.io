@@ -3,6 +3,7 @@ import CustomRippleCursor from "./components/CustomCursor";
 import DecryptedText from "./components/DecryptedText";
 import { Roboto_font } from "./components/fonts";
 import { PagesStyles } from "./components/pagesstyles";
+import SkillNetwork from "./components/SkillNetwork";
 
 export default function Home() {
   return (
@@ -108,13 +109,10 @@ export default function Home() {
 
           </div>
 
-          <div className="w-full max-w-3xl h-[400px] overflow-hidden bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-6 flex items-center justify-center min-h-[150px] shadow-md">
-            <img
-                src="/images/mapa.png"
-                alt="Mapa estilizado"
-                className="w-full h-full object-cover contrast-125 opacity-80 rounded-xl"
-              />
-          </div>
+          <div className="w-full max-w-3xl">
+          <SkillNetwork />
+        </div>
+
         </div>
       </main>
     </div>
