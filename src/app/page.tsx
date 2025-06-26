@@ -33,7 +33,7 @@ export default function Home() {
                   speed={90}
                   maxIterations={60}
                   encryptedClassName="text-red-500 animate-pulse"
-                  parentClassName="text-2xl font-bold tracking-wide"
+                  parentClassName="text-2xl tracking-wide"
                 />
                 <DecryptedText
                   text="|"
@@ -43,7 +43,7 @@ export default function Home() {
                   speed={90}
                   maxIterations={60}
                   encryptedClassName="text-red-500 animate-pulse"
-                  parentClassName="text-2xl font-bold tracking-wide"
+                  parentClassName="text-2xl  tracking-wide"
                 />
                 <DecryptedText
                   text="Code"
@@ -53,7 +53,7 @@ export default function Home() {
                   speed={90}
                   maxIterations={60}
                   encryptedClassName="text-red-500 animate-pulse"
-                  parentClassName="text-2xl font-bold tracking-wide"
+                  parentClassName="text-2xl tracking-wide"
                 />
               </h1>
 
@@ -66,7 +66,7 @@ export default function Home() {
                   speed={90}
                   maxIterations={40}
                   encryptedClassName="text-red-500 animate-pulse"
-                  parentClassName="text-2xl lg:text-4xl font-bold tracking-wide"
+                  parentClassName="text-2xl lg:text-4xl  tracking-wide"
                 />
                 <DecryptedText
                   text="|"
@@ -76,7 +76,7 @@ export default function Home() {
                   speed={90}
                   maxIterations={40}
                   encryptedClassName="text-red-500 animate-pulse"
-                  parentClassName="text-2xl lg:text-4xl font-bold tracking-wide"
+                  parentClassName="text-2xl lg:text-4xl tracking-wide"
                 />
                 <DecryptedText
                   text="Code"
@@ -86,7 +86,7 @@ export default function Home() {
                   speed={90}
                   maxIterations={40}
                   encryptedClassName="text-red-500 animate-pulse"
-                  parentClassName="text-2xl lg:text-4xl font-bold tracking-wide"
+                  parentClassName="text-2xl lg:text-4xl tracking-wide"
                 />
               </h1>
 
@@ -109,7 +109,11 @@ export default function Home() {
           </div>
 
           <div className="w-full max-w-3xl bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-6 flex items-center justify-center min-h-[150px] shadow-md">
-            <span className="text-gray-100">map</span>
+            <img
+                src="/images/mapa.png"
+                alt="Mapa estilizado"
+                className="w-full h-auto object-cover contrast-125 opacity-80 rounded-xl"
+              />
           </div>
         </div>
       </main>
