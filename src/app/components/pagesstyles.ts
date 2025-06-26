@@ -1,6 +1,7 @@
 export const PagesStyles = {
     /*General*/
-    background: "min-h-screen px-4 py-10 bg-gradient-to-br from-black via-gray-900 to-black",
+    /* optional background: "min-h-screen px-4 py-10 bg-gradient-to-br from-black via-gray-900 to-black" */
+    background: "min-h-screen px-4 py-10 bg-gradient-to-br from-[#0b0b0b] via-[#0e0e0e] to-[#0b0b0b] to-black",
     titles: "text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-10 text-amber-400 text-center mx-auto leading-tight",
     /*Navbar*/
     navcontainer: "w-full flex justify-center px-2",
