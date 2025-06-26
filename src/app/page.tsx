@@ -24,7 +24,7 @@ export default function Home() {
 
             <div className="flex-1 relative p-6 lg:pl-12 shadow-md min-h-[224px] flex flex-col justify-start">
 
-              <h1 className={`${PagesStyles.titles} block text-center lg:hidden mt-4`}>
+              <h1 className={`${PagesStyles.titles} block text-center lg:hidden mt-1`}>
                 <DecryptedText
                   text="scriptor"
                   animateOn="view"
@@ -90,16 +90,17 @@ export default function Home() {
                 />
               </h1>
 
-              <p className={`text-gray-100 text-sm lg:text-base mt-5 lg:mt-5 text-right ${Roboto_font.className}`}>
+              <p className={`text-sm lg:text-base mt-1 lg:mt-5 text-right ${Roboto_font.className}`}>
                 <DecryptedText
-                  text="I’m a frontend focused on clean architecture, UI/UX consistency, and interactive design. I build responsive web apps. I prioritize component-based architecture, performance, and scalable code using TypeScript."
+                  text="I’m a developer focused on clean architecture, UI/UX consistency, and interactive design. I build responsive web apps and sometimes I colaborate creating software. I prioritize component-based architecture, performance, and scalable code using TypeScript."
                   animateOn="view"
                   sequential
                   revealDirection="center"
                   speed={1}
                   maxIterations={5}
-                  encryptedClassName=""
-                  parentClassName=""
+                  encryptedClassName="text-red-500 animate-pulse"  
+                  className="text-white transition-colors duration-300"
+                  parentClassName="tracking-wide"
                 />
               </p>
             </div>
