@@ -9,7 +9,7 @@ export default function Home() {
     <div>
       <CustomRippleCursor />
 
-      <main className={`${PagesStyles.mainContainer}`}>
+      <main className={`${PagesStyles.mainContainer} animate-fade-in-up`}>
         <div className="flex flex-col items-center justify-center p-6 sm:p-10">
 
           <div className="flex flex-col lg:flex-row w-full max-w-3xl gap-8 gap-y-12 mb-10">
