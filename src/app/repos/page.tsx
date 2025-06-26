@@ -40,7 +40,7 @@ export default async function ReposPage() {
             href={repo.html_url}
             target="_blank"
             rel="noopener noreferrer"
-            className={`${Roboto_font.className} rounded-2xl p-8 border border-white/10 bg-white/10 backdrop-blur-lg backdrop-saturate-150 shadow-md transition-all duration-300 hover:shadow-yellow-400/40 hover:border-yellow-300/30 hover:text-yellow-300`}
+            className={`${Roboto_font.className}  text-gray-200 rounded-2xl p-8 border border-white/10 bg-white/10 backdrop-blur-lg backdrop-saturate-150 shadow-md transition-all duration-300 hover:shadow-yellow-400/40 hover:border-yellow-300/30 hover:text-yellow-300`}
           >
             <RepoImage repoName={repo.name} />
 

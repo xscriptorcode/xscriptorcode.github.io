@@ -1,9 +1,8 @@
 'use client';
 import CustomRippleCursor from "./components/CustomCursor";
 import DecryptedText from "./components/DecryptedText";
+import { Roboto_font } from "./components/fonts";
 import { PagesStyles } from "./components/pagesstyles";
-
-
 
 export default function Home() {
   return (
@@ -11,41 +10,107 @@ export default function Home() {
       <CustomRippleCursor />
 
       <main className={`${PagesStyles.mainContainer}`}>
-        <h1 className={`${PagesStyles.titles}`}>
-          <DecryptedText
-            text="Xscriptor"
-            animateOn="view"
-            sequential={true}
-            revealDirection="center"
-            speed={60}
-            maxIterations={20}
-            className=""
-            encryptedClassName="text-gray-500"
-            parentClassName="text-4xl font-bold tracking-wide"
-          />
-          <DecryptedText
-            text="|"
-            animateOn="view"
-            sequential={true}
-            revealDirection="center"
-            speed={60}
-            maxIterations={20}
-            className=""
-            encryptedClassName="text-gray-500"
-            parentClassName="text-4xl font-bold tracking-wide"
-          />
-          <DecryptedText
-            text="Code"
-            animateOn="view"
-            sequential={true}
-            revealDirection="center"
-            speed={60}
-            maxIterations={20}
-            className=""
-            encryptedClassName="text-gray-500"
-            parentClassName="text-4xl font-bold tracking-wide"
-          />
-        </h1>
+        <div className="flex flex-col items-center justify-center p-6 sm:p-10">
+
+          <div className="flex flex-col lg:flex-row w-full max-w-3xl gap-8 gap-y-12 mb-10">
+            <div className="w-56 h-56 bg-white/10 backdrop-blur-lg border border-white/20 rounded-full flex items-center justify-center shadow-md mx-auto lg:mx-0 overflow-hidden">
+              <img
+                src="https://github.com/xscriptorcode.png"
+                alt="Foto de perfil"
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+
+            <div className="flex-1 relative p-6 lg:pl-12 shadow-md min-h-[224px] flex flex-col justify-start">
+
+              <h1 className={`${PagesStyles.titles} block text-center lg:hidden mt-4`}>
+                <DecryptedText
+                  text="scriptor"
+                  animateOn="view"
+                  sequential
+                  revealDirection="center"
+                  speed={90}
+                  maxIterations={60}
+                  encryptedClassName="text-gray-500"
+                  parentClassName="text-2xl font-bold tracking-wide"
+                />
+                <DecryptedText
+                  text="|"
+                  animateOn="view"
+                  sequential
+                  revealDirection="center"
+                  speed={90}
+                  maxIterations={60}
+                  encryptedClassName="text-gray-500"
+                  parentClassName="text-2xl font-bold tracking-wide"
+                />
+                <DecryptedText
+                  text="Code"
+                  animateOn="view"
+                  sequential
+                  revealDirection="center"
+                  speed={90}
+                  maxIterations={60}
+                  encryptedClassName="text-gray-500"
+                  parentClassName="text-2xl font-bold tracking-wide"
+                />
+              </h1>
+
+              <h1 className={`${PagesStyles.titles} ${Roboto_font.className}  hidden lg:block absolute top-15 right-120`}>
+                <DecryptedText
+                  text="scriptor"
+                  animateOn="view"
+                  sequential
+                  revealDirection="center"
+                  speed={90}
+                  maxIterations={40}
+                  encryptedClassName="text-gray-500"
+                  parentClassName="text-2xl lg:text-4xl font-bold tracking-wide"
+                />
+                <DecryptedText
+                  text="|"
+                  animateOn="view"
+                  sequential
+                  revealDirection="center"
+                  speed={90}
+                  maxIterations={40}
+                  encryptedClassName="text-gray-500"
+                  parentClassName="text-2xl lg:text-4xl font-bold tracking-wide"
+                />
+                <DecryptedText
+                  text="Code"
+                  animateOn="view"
+                  sequential
+                  revealDirection="center"
+                  speed={90}
+                  maxIterations={40}
+                  encryptedClassName="text-gray-500"
+                  parentClassName="text-2xl lg:text-4xl font-bold tracking-wide"
+                />
+              </h1>
+
+              <p className={`text-gray-100 text-sm lg:text-base mt-5 lg:mt-5 text-right ${Roboto_font.className}`}>
+                <DecryptedText
+                  text="I’m a frontend focused on clean architecture, UI/UX consistency, and interactive design. I build responsive web apps. I prioritize component-based architecture, performance, and scalable code using TypeScript."
+                  animateOn="view"
+                  sequential
+                  revealDirection="center"
+                  speed={1}
+                  maxIterations={5}
+                  encryptedClassName=""
+                  parentClassName=""
+                />
+              </p>
+            </div>
+
+
+          </div>
+
+          <div className="w-full max-w-3xl bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-6 flex items-center justify-center min-h-[150px] shadow-md">
+            <span className="text-gray-100">map</span>
+          </div>
+        </div>
       </main>
     </div>
   );
