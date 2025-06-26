@@ -10,6 +10,20 @@ const skills = [
   { name: "Javascript", top: "10%", left: "50%" },
   { name: "php", top: "22%", left: "30%" },
   { name: "bash", top: "10%", left: "30%" },
+  { name: "Next.js", top: "40%", left: "75%" },
+  { name: "Framer Motion", top: "65%", left: "55%" },
+  { name: "Linux", top: "70%", left: "15%" },
+  { name: "Ubuntu Server", top: "80%", left: "35%" },
+  { name: "React Native", top: "60%", left: "80%" },
+  { name: "Gitea", top: "35%", left: "25%" },
+  { name: "WireGuard", top: "25%", left: "80%" },
+  { name: "Next.js Routing", top: "45%", left: "50%" },
+  { name: "Glassmorphism", top: "40%", left: "10%" },
+  { name: "Custom UI", top: "55%", left: "45%" },
+  { name: "Distributed Teams", top: "90%", left: "50%" },
+  { name: "Cybersecurity (learning)", top: "60%", left: "5%" },
+  { name: "En-Es", top: "5%", left: "85%" }
+
 ];
 
 export default function SkillNetwork() {
@@ -25,7 +39,7 @@ export default function SkillNetwork() {
       {skills.map((skill, index) => (
         <div
           key={index}
-          className="absolute flex items-center gap-1 text-white rounded-xl bg-white/1 backdrop-blur-sm border border-white/20 shadow-sm text-sm"
+          className="absolute flex items-center gap-1 px-2 py-1 text-white text-sm bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl shadow-sm"
           style={{ top: skill.top, left: skill.left }}
         >
           <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
