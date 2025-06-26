@@ -32,7 +32,7 @@ export default function Home() {
                   revealDirection="center"
                   speed={90}
                   maxIterations={60}
-                  encryptedClassName="text-gray-500"
+                  encryptedClassName="text-red-500 animate-pulse"
                   parentClassName="text-2xl font-bold tracking-wide"
                 />
                 <DecryptedText
@@ -42,7 +42,7 @@ export default function Home() {
                   revealDirection="center"
                   speed={90}
                   maxIterations={60}
-                  encryptedClassName="text-gray-500"
+                  encryptedClassName="text-red-500 animate-pulse"
                   parentClassName="text-2xl font-bold tracking-wide"
                 />
                 <DecryptedText
@@ -52,7 +52,7 @@ export default function Home() {
                   revealDirection="center"
                   speed={90}
                   maxIterations={60}
-                  encryptedClassName="text-gray-500"
+                  encryptedClassName="text-red-500 animate-pulse"
                   parentClassName="text-2xl font-bold tracking-wide"
                 />
               </h1>
@@ -65,7 +65,7 @@ export default function Home() {
                   revealDirection="center"
                   speed={90}
                   maxIterations={40}
-                  encryptedClassName="text-gray-500"
+                  encryptedClassName="text-red-500 animate-pulse"
                   parentClassName="text-2xl lg:text-4xl font-bold tracking-wide"
                 />
                 <DecryptedText
@@ -75,7 +75,7 @@ export default function Home() {
                   revealDirection="center"
                   speed={90}
                   maxIterations={40}
-                  encryptedClassName="text-gray-500"
+                  encryptedClassName="text-red-500 animate-pulse"
                   parentClassName="text-2xl lg:text-4xl font-bold tracking-wide"
                 />
                 <DecryptedText
@@ -85,7 +85,7 @@ export default function Home() {
                   revealDirection="center"
                   speed={90}
                   maxIterations={40}
-                  encryptedClassName="text-gray-500"
+                  encryptedClassName="text-red-500 animate-pulse"
                   parentClassName="text-2xl lg:text-4xl font-bold tracking-wide"
                 />
               </h1>
