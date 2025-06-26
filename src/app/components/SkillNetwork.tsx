@@ -26,7 +26,9 @@ const skills = [
 
 export default function SkillNetwork() {
   return (
-    <div className="relative w-full h-[400px] sm:h-[450px] md:h-[500px] lg:h-[500px] lg:w-[900px] mx-auto overflow-hidden rounded-2xl">
+    
+    <div className="relative w-full h-[400px] sm:h-[450px] md:h-[500px] lg:h-[500px] lg:w-[900px] mx-auto overflow-hidden rounded-2xl bg-white/20 backdrop-blur-2xl border border-white/30 shadow-xl">
+
 
       <Image
         src="/images/mapa.png"

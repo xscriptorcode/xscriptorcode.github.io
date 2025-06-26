@@ -44,11 +44,11 @@ export default async function ReposPage() {
           >
             <RepoImage repoName={repo.name} />
 
-            <h2 className="relative text-base font-semibold mb-2 transition-colors duration-300 hover:text-yellow-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-yellow-300 after:transition-all after:duration-300">
+            <h2 className="relative text-lg font-semibold mb-2 transition-colors duration-300 hover:text-yellow-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-yellow-300 after:transition-all after:duration-300">
               {repo.name}
             </h2>
 
-            <p className="text-xs text-gray-200">
+            <p className="text-base text-gray-200">
               {repo.description || "There's no description"}
             </p>
           </a>
