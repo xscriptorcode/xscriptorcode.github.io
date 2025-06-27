@@ -27,54 +27,90 @@ export default function Home() {
               parentClassName="text-2xl tracking-wide"
             />
           </h1>
-          <div className={`bg-black/70 border border-gray-700 rounded-xl shadow-lg px-8 py-8 w-full max-w-1/3 mx-auto`}>
+          <div className="bg-black/70 border border-gray-700 rounded-xl shadow-lg w-full max-w-lg mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 lg:py-10 flex flex-col gap-4">
             <div className="flex items-center">
-              <span className={`text-white ${Roboto_font.className}`}> 
-            <DecryptedText
-              text="@Name*://"
-              animateOn="view"
-              sequential
-              revealDirection="center"
-              speed={90}
-              maxIterations={60}
-              encryptedClassName="text-blue-200 animate-pulse"
-              parentClassName="tracking-wide"
-            /> 
-          </span>
+              <span className={`text-white ${Roboto_font.className}`}>
+                <DecryptedText
+                  text="@Name*://"
+                  animateOn="view"
+                  sequential
+                  revealDirection="center"
+                  speed={90}
+                  maxIterations={60}
+                  encryptedClassName="text-blue-200 animate-pulse"
+                  parentClassName="tracking-wide"
+                />
+              </span>
               <input
                 type="text"
                 id="name"
                 name="name"
+                required
                 className="bg-transparent border-0 border-b border-dashed border-gray-500 text-white focus:outline-none w-full"
               />
-              </div>
-              <div className="flex items-center">
-              <span className="w-24 text-white">E-Mail*:</span>
+            </div>
+            <div className="flex items-center">
+              <span className={`text-white ${Roboto_font.className}`}>
+                <DecryptedText
+                  text="@Email*://"
+                  animateOn="view"
+                  sequential
+                  revealDirection="center"
+                  speed={90}
+                  maxIterations={60}
+                  encryptedClassName="text-blue-200 animate-pulse"
+                  parentClassName="tracking-wide"
+                />
+              </span>
               <input
                 type="text"
-                id="name"
-                name="name"
+                id="email"
+                name="email"
+                required
                 className="bg-transparent border-0 border-b border-dashed border-gray-500 text-white focus:outline-none w-full"
               />
-              </div>
-              <div className="flex items-center">
-              <span className="w-24 text-white">Number:</span>
+            </div>
+            <div className="flex items-center">
+              <span className={`text-white ${Roboto_font.className}`}>
+                <DecryptedText
+                  text="@Number://"
+                  animateOn="view"
+                  sequential
+                  revealDirection="center"
+                  speed={90}
+                  maxIterations={60}
+                  encryptedClassName="text-blue-200 animate-pulse"
+                  parentClassName="tracking-wide"
+                />
+              </span>
               <input
                 type="text"
-                id="name"
-                name="name"
+                id="number"
+                name="number"
                 className="bg-transparent border-0 border-b border-dashed border-gray-500 text-white focus:outline-none w-full"
               />
-              </div>
-              <div className="flex items-center">
-              <span className="w-24 text-white">Message*:</span>
+            </div>
+            <div className="flex items-center">
+              <span className={`text-white ${Roboto_font.className}`}>
+                <DecryptedText
+                  text="@Message*://"
+                  animateOn="view"
+                  sequential
+                  revealDirection="center"
+                  speed={90}
+                  maxIterations={60}
+                  encryptedClassName="text-blue-200 animate-pulse"
+                  parentClassName="tracking-wide"
+                />
+              </span>
               <input
                 type="text"
-                id="name"
-                name="name"
+                id="message"
+                name="message"
+                required
                 className="bg-transparent border-0 border-b border-dashed border-gray-500 text-white focus:outline-none w-full"
               />
-              </div>
+            </div>
           </div>
         </div>
       </main>
