@@ -17,7 +17,7 @@ Here you will find the icons used in the navbar, created as components to make i
 
 * XscriptorIcon.tsx
 
-* Also, I defined:
+Also, I defined:
 
 * iconStyles.ts — This file centralizes the customization of the navbar icon styles, making it easier to maintain.
 
@@ -38,6 +38,8 @@ Here you will find the icons used for general purposes throughout the web app.
 * Navbar.tsx — Defines the structure of the navbar, including the icons, glassmorphism effect, and dimensions.
 
 * NavLink.jsx — Controls the behavior of the navbar links.
+
+* ContactForm.tsx – Creates the email message to be handled by the user's email client (e.g., Gmail or Outlook), while also sending it internally through an API on the website.
 
 * RepoImage.tsx — Contains the logic to fetch and display a preview image for each repository directly from GitHub.
 
