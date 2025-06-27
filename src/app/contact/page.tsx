@@ -28,6 +28,11 @@ export default function Home() {
             />
           </h1>
           <div className="bg-black/70 border border-gray-700 rounded-xl shadow-lg w-full max-w-lg mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 lg:py-10 flex flex-col gap-4">
+            <div className="flex items-center space-x-2 mb-4">
+              <span className="w-3 h-3 bg-red-500 rounded-full"></span>
+              <span className="w-3 h-3 bg-yellow-500 rounded-full"></span>
+              <span className="w-3 h-3 bg-green-500 rounded-full"></span>
+            </div>
             <div className="flex items-center">
               <span className={`text-white ${Roboto_font.className}`}>
                 <DecryptedText
@@ -46,6 +51,7 @@ export default function Home() {
                 id="name"
                 name="name"
                 required
+                placeholder="Write your name here"
                 className="bg-transparent border-0 border-b border-dashed border-gray-500 text-white focus:outline-none w-full"
               />
             </div>
@@ -67,6 +73,7 @@ export default function Home() {
                 id="email"
                 name="email"
                 required
+                placeholder="email here"
                 className="bg-transparent border-0 border-b border-dashed border-gray-500 text-white focus:outline-none w-full"
               />
             </div>
@@ -87,6 +94,7 @@ export default function Home() {
                 type="text"
                 id="number"
                 name="number"
+                placeholder="your phone number here(optional)"
                 className="bg-transparent border-0 border-b border-dashed border-gray-500 text-white focus:outline-none w-full"
               />
             </div>
@@ -108,6 +116,7 @@ export default function Home() {
                 id="message"
                 name="message"
                 required
+                placeholder="leave your message"
                 className="bg-transparent border-0 border-b border-dashed border-gray-500 text-white focus:outline-none w-full"
               />
             </div>
