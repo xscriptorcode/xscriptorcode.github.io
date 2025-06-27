@@ -22,6 +22,12 @@ async function getRepos(): Promise<GitHubRepo[]> {
   return res.json();
 }
 
+export const metadata = {
+  title: "Public Repos - XscriptorCode",
+  description: "Here you can explore all my personal projetcs.",
+};
+
+
 export default async function ReposPage() {
   const repos = await getRepos();
 

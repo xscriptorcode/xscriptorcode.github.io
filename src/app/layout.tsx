@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "xscriptorcode",
+  title: "XscriptorCode",
   description: "Dev from X",
 };
 
