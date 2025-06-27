@@ -1,4 +1,4 @@
-import Burbujas from "../components/burbujas";
+import Burbujas from "../components/bubbles";
 import { Roboto_font } from "@/app/components/fonts";
 import CustomRippleCursor from "../components/CustomCursor";
 import { PagesStyles } from "../components/pagesstyles";
