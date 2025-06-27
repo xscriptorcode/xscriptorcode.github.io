@@ -7,7 +7,7 @@ export const metadata = {
 };
 
 
-export default function Home() {
+export default function Portfolio() {
   return (
     <div>
       <CustomRippleCursor />
