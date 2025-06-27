@@ -9,7 +9,7 @@ export default function ContactForm() {
       onSubmit={(e) => {
         e.preventDefault();
         const form = e.currentTarget;
-        const name = form.name.valueOf;
+        const name = (form.elements.namedItem("name") as HTMLInputElement).value;
         const email = form.email.value;
         const number = form.number.value;
         const message = form.message.value;
@@ -19,7 +19,7 @@ export default function ContactForm() {
           `Nombre: ${name}\nEmail: ${email}\nNúmero: ${number}\nMensaje:\n${message}`
         );
 
-        window.location.href = `mailto:tucorreo@ejemplo.com?subject=${subject}&body=${body}`;
+        window.location.href = `mailto:x@xscriptor.com?subject=${subject}&body=${body}`;
       }}
       className="bg-black/70 border border-gray-700 rounded-xl shadow-lg w-full max-w-lg mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 lg:py-10 flex flex-col gap-4"
     >
