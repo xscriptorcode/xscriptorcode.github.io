@@ -1,8 +1,8 @@
-import {IconsStyles} from "@/app/components/navbarIcons/iconsStyles"
+import {IconsStyles} from "@/app/components/IconsStyles"
 export default function ContactIcon() {
   return (
     <svg
-      className={IconsStyles.IconStyles}
+      className={IconsStyles.navIconStyles}
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"

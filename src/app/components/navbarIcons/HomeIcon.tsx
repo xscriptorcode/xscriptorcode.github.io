@@ -1,8 +1,8 @@
-import { IconsStyles } from "@/app/components/navbarIcons/iconsStyles"
+import { IconsStyles } from "@/app/components/IconsStyles"
 export default function HomeIcon() {
   return (
     <svg
-      className={IconsStyles.IconStyles}
+      className={IconsStyles.navIconStyles}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 50 50"
       width="24"
