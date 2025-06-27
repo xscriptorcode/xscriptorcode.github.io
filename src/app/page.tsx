@@ -11,10 +11,11 @@ export default function Home() {
       <CustomRippleCursor />
 
       <main className={`${PagesStyles.mainContainer} animate-fade-in-up`}>
-        <div className="flex flex-col items-center justify-center p-6 sm:p-10">
+        <div className="w-full max-w-5xl mx-auto flex flex-col items-center justify-center p-6 sm:p-10 bg-white/5 backdrop-blur-lg border border-white/20 rounded-2xl shadow-md">
 
-          <div className="flex flex-col lg:flex-row w-full max-w-3xl gap-8 gap-y-12 mb-10">
-            <div className="w-56 h-56 bg-white/10 backdrop-blur-lg border border-white/20 rounded-full flex items-center justify-center shadow-md mx-auto lg:mx-0 overflow-hidden">
+
+          <div className="flex flex-col lg:flex-row w-full max-w-3xl gap-8 gap-y-12 mb-10 ">
+            <div className="w-56 h-56 bg-white/5 backdrop-blur-lg border border-white/20 rounded-full flex items-center justify-center shadow-md mx-auto lg:mx-0 overflow-hidden">
               <img
                 src="https://github.com/xscriptorcode.png"
                 alt="Foto de perfil"
@@ -23,7 +24,7 @@ export default function Home() {
             </div>
 
 
-            <div className="flex-1 relative p-6 lg:pl-12 shadow-md min-h-[224px] flex flex-col justify-start">
+            <div className="flex-1 relative p-6 lg:pl-12 min-h-[224px] flex flex-col justify-start">
 
               <h1 className={`${PagesStyles.titles} ${Roboto_font.className} block text-right lg:hidden absolute -top-24 right-1`}>
                 <DecryptedText
