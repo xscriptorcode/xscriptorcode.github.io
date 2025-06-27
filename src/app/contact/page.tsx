@@ -18,7 +18,7 @@ export default function Contact() {
   return (
     <div>
       <CustomRippleCursor />
-      <main className={`${PagesStyles.mainContainer} min-h-0`}>
+      <main className={`${PagesStyles.mainContainer} animate-fade-in-up`}>
         <div className="flex-1 relative p-6 lg:pl-12 min-h-[224px] flex flex-col justify-start">
           <h1 className={`${PagesStyles.titles} ${Roboto_font.className}`}>
             <DecryptedText
@@ -89,7 +89,7 @@ export default function Contact() {
             GitHub <GithubIcon />
           </a>
         </div>
-
+        
       </main>
     </div>
 
