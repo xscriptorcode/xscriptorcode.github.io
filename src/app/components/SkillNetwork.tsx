@@ -10,7 +10,6 @@ const skills = [
   { name: "PHP", top: "22%", left: "30%", description: "Server-side scripting language for web apps" },
   { name: "Bash", top: "10%", left: "30%", description: "Unix shell used for scripting and automation" },
   { name: "Next.js", top: "40%", left: "75%", description: "Full-stack React framework for fast apps" },
-  { name: "Framer Motion", top: "65%", left: "55%", description: "React animation library for smooth UI transitions" },
   { name: "Linux", top: "70%", left: "15%", description: "Open-source OS for development and servers" },
   { name: "MySQL", top: "80%", left: "35%", description: "Relational database management system" },
   { name: "React Native", top: "60%", left: "80%", description: "React framework for building native mobile apps" },
