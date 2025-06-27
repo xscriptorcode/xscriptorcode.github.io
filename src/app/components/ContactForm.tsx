@@ -21,7 +21,7 @@ export default function ContactForm() {
 
         window.location.href = `mailto:x@xscriptor.com?subject=${subject}&body=${body}`;
       }}
-      className="bg-black/70 border border-gray-700 rounded-xl shadow-lg w-full max-w-lg mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 lg:py-10 flex flex-col gap-4"
+      className="bg-white/5 backdrop-blur-lg border border-white/20 rounded-2xl shadow-xl w-full max-w-2xl mx-auto px-6 sm:px-8 lg:px-10 py-8 sm:py-10 lg:py-12 flex flex-col gap-5"
     >
       <div className="flex items-center space-x-2 mb-4">
         <span className="w-3 h-3 bg-red-500 rounded-full"></span>
@@ -32,7 +32,7 @@ export default function ContactForm() {
         { label: "@Name*://", name: "name", type: "text", required: true, placeholder: "Your name here" },
         { label: "@Email*://", name: "email", type: "email", required: true, placeholder: "email" },
         { label: "@Number://", name: "number", type: "text", placeholder: "phone(optional)" },
-        { label: "@Message*://", name: "message", type: "text", required: true, placeholder: "leave your message" },
+        { label: "@Message*://", name: "message", type: "text", required: true, placeholder: "your message" },
       ].map((field, index) => (
         <div key={index} className="flex items-center">
           <span className={`text-white ${Roboto_font.className}`}>

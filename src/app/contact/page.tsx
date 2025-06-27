@@ -35,9 +35,9 @@ export default function Contact() {
           <ContactForm />
         </div>
         <div className="mt-6 flex flex-col items-center">
-          <h2 className={`${Roboto_font.className} text-lg sm:text-xl md:text-2xl text-amber-100 text-center leading-tight mb-4`}>
+          <h2 className="text-sm sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-amber-100 text-center leading-tight mb-4">
             <DecryptedText
-              text="Also, you can also find me on:"
+              text="You can also find me on:"
               animateOn="view"
               sequential
               revealDirection="center"
