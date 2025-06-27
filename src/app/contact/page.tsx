@@ -51,7 +51,7 @@ export default function Home() {
                 id="name"
                 name="name"
                 required
-                placeholder="Write your name here"
+                placeholder="Your name here"
                 className="bg-transparent border-0 border-b border-dashed border-gray-500 text-white focus:outline-none w-full"
               />
             </div>
@@ -73,7 +73,7 @@ export default function Home() {
                 id="email"
                 name="email"
                 required
-                placeholder="email here"
+                placeholder="email"
                 className="bg-transparent border-0 border-b border-dashed border-gray-500 text-white focus:outline-none w-full"
               />
             </div>
@@ -94,7 +94,7 @@ export default function Home() {
                 type="text"
                 id="number"
                 name="number"
-                placeholder="your phone number here(optional)"
+                placeholder="phone number(optional)"
                 className="bg-transparent border-0 border-b border-dashed border-gray-500 text-white focus:outline-none w-full"
               />
             </div>
@@ -119,6 +119,14 @@ export default function Home() {
                 placeholder="leave your message"
                 className="bg-transparent border-0 border-b border-dashed border-gray-500 text-white focus:outline-none w-full"
               />
+            </div>
+            <div className="flex justify-center">
+            <button
+              type="submit"
+              className="mt-4 bg-gray-800 hover:bg-gray-700 text-white font-mono px-4 py-2 rounded border border-gray-600 shadow transition"
+            >
+              Send ➤
+            </button>
             </div>
           </div>
         </div>
