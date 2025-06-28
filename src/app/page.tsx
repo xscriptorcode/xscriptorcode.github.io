@@ -10,9 +10,9 @@ export default function Home() {
     <div>
       <CustomRippleCursor />
       <main className={`${PagesStyles.mainContainer} animate-fade-in-up`}>
-        <div className="w-full max-w-5xl mx-auto flex flex-col items-center justify-center p-6 sm:p-10 bg-white/5 backdrop-blur-lg border border-white/20 rounded-2xl shadow-md">
+        <div className="w-full max-w-5xl mx-auto flex flex-col items-center justify-center p-6 sm:p-10 bg-white/1 backdrop-blur-lg border border-white/20 rounded-2xl shadow-md">
           <div className="flex flex-col lg:flex-row w-full max-w-3xl gap-8 gap-y-12 mb-10 ">
-            <div className="w-56 h-56 bg-white/5 backdrop-blur-lg border border-white/20 rounded-full flex items-center justify-center shadow-md mx-auto lg:mx-0 overflow-hidden">
+            <div className="w-56 h-56 bg-white/2 backdrop-blur-lg border border-white/10 rounded-full flex items-center justify-center shadow-md mx-auto lg:mx-0 overflow-hidden">
               <img
                 src="https://github.com/xscriptorcode.png"
                 alt="Foto de perfil"
@@ -101,6 +101,21 @@ export default function Home() {
           </div>
           <div className="w-full flex justify-center lg:mt-16">
             <SkillNetwork />
+          </div>
+          <div className="mt-8 text-center text-white/90 max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl font-light italic">
+              “Building the web one pixel at a time, from anywhere.”
+            </p>
+            <p className="mt-2 text-sm md:text-base text-white/70">
+              Pushing boundaries through design, code, and collaboration.
+            </p>
+
+            <a
+              href="/contact"
+              className="inline-block mt-6 px-5 py-2  bg-white/6 backdrop-blur-lg border border-white/20 rounded-full  text-amber-50 font-medium hover:bg-amber-50 hover:text-black transition"
+            >
+              Let’s talk
+            </a>
           </div>
         </div>
       </main>
