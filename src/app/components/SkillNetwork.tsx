@@ -27,15 +27,12 @@ export default function SkillNetwork() {
   return (
     
     <div className="relative w-full h-[400px] sm:h-[450px] md:h-[500px] lg:h-[500px] lg:w-[900px] mx-auto overflow-hidden rounded-2xl bg-white/20 backdrop-blur-2xl border border-white/30 shadow-xl">
-
-
       <Image
         src="/images/mapa.png"
         alt="Mapa estilizado"
         fill
         className="object-cover grayscale-500 contrast-125 opacity-80 rounded-2xl z-0"
       />
-
       <svg className="absolute w-full h-full pointer-events-none z-10 hidden sm:block">
         {skills.map((from, i) =>
           skills.map((to, j) => {
@@ -56,7 +53,6 @@ export default function SkillNetwork() {
           })
         )}
       </svg>
-
       <div className="hidden sm:block">
         {skills.map((skill, index) => (
           <div
@@ -72,7 +68,6 @@ export default function SkillNetwork() {
           </div>
         ))}
       </div>
-
       <ul className="flex flex-col gap-2 sm:hidden absolute top-0 left-0 w-full h-full overflow-y-auto p-4 z-20 bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl shadow-inner">
         <h3 className="text-white text-lg font-semibold mb-2">Skills</h3>
         {skills.map((skill, index) => (
@@ -85,7 +80,6 @@ export default function SkillNetwork() {
           </li>
         ))}
       </ul>
-
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-sm text-white text-center px-4 py-2 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 shadow-sm">
         Collaborating globally through <strong>remote work</strong>
       </div>
