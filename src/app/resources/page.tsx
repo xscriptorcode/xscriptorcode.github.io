@@ -10,7 +10,7 @@ export const metadata = {
 
 export default function Resources() {
   return (
-      <main>
+      <main className={`${PagesStyles.mainContainer}`}>
         <CustomRippleCursor />
         <h1 className={`${PagesStyles.titles}`}>X</h1>
       </main>
