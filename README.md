@@ -17,10 +17,6 @@ Here you will find the icons used in the navbar, created as components to make i
 
 * XscriptorIcon.tsx
 
-Also, I defined:
-
-* iconStyles.ts — This file centralizes the customization of the navbar icon styles, making it easier to maintain.
-
 ### pageicons:
 Here you will find the icons used for general purposes throughout the web app.
 
@@ -44,3 +40,7 @@ Here you will find the icons used for general purposes throughout the web app.
 * RepoImage.tsx — Contains the logic to fetch and display a preview image for each repository directly from GitHub.
 
 * SkillNetwork.tsx — Handles the logic for the skill map (points and connecting lines). Also controls responsive behavior on mobile screens.
+
+Also, I defined:
+
+* iconStyles.ts — This file centralizes the customization of the navbar and contactpage icon styles, making it easier to maintain.

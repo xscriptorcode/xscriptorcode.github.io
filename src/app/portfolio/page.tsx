@@ -1,5 +1,6 @@
 
 import CustomRippleCursor from "@/app/components/CustomCursor";
+import { PagesStyles } from "../components/pagesstyles";
 
 export const metadata = {
   title: "Portfolio - XscriptorCode",
@@ -11,7 +12,7 @@ export default function Portfolio() {
   return (
     <div>
       <CustomRippleCursor />
-      <main> 
+      <main className={`${PagesStyles.mainContainer}`}> 
       </main>
       </div>
   );
