@@ -115,7 +115,7 @@ export default function Home() {
               href="/contact"
               className="inline-block mt-6 px-5 py-2  bg-white/6 backdrop-blur-lg border border-white/20 rounded-full  text-amber-50 font-medium hover:bg-amber-50 hover:text-black transition"
             >
-              Let’s talk
+              Let&rsquo;s talk
             </a>
           </div>
         </div>

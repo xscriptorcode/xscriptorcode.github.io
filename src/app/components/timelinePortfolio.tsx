@@ -272,7 +272,7 @@ export function PortfolioTimeline() {
             </li>
             <li>
               Earned a certification from the{" "}
-              <strong>Universitat Autònoma de Barcelona</strong> in Digital
+              <strong>Universitat Autónoma de Barcelona</strong> in Digital
               Humanities.
             </li>
             <li>
@@ -280,17 +280,18 @@ export function PortfolioTimeline() {
               and Technical Support Fundamentals.
             </li>
             <li>
-              Earned multiple certifications on <strong>Coursera</strong> and{" "}
-              <strong>OpenWebinars</strong> in React, web security, backend
-              development, project management, CSS, Tailwind, and JavaScript.
+              Earned multiple certifications on <strong>OpenWebinars</strong> in
+              jQuery, web security, Bootstrap Fundamentals, PHP Fundamentals,
+              Tailwind CSS, and JavaScript.
             </li>
             <li>
               Worked as a <strong>freelance web administrator</strong>,
               maintaining and optimizing websites for small businesses.
             </li>
             <li>
-              Another projects development: <strong>Xscriptor — Xliterato — Xscriptorcode{""}</strong>,
-              art literature and programming portfolios.
+              Another projects development:{" "}
+              <strong>Xscriptor — Xliterato — Xscriptorcode{""}</strong>, art
+              literature and programming portfolios.
             </li>
           </ul>
         </div>
