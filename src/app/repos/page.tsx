@@ -39,14 +39,14 @@ export default async function ReposPage() {
         Projects...
       </h1>
 
-      <div className="animate-fade-in-up grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto px-4">
+      <div className={`${PagesStyles.projetsGrid}`}>
         {repos.map((repo: GitHubRepo) => (
           <a
             key={repo.id}
             href={repo.html_url}
             target="_blank"
             rel="noopener noreferrer"
-            className={`${Roboto_font.className}  text-gray-200 rounded-2xl p-8 border border-white/10 bg-white/10 backdrop-blur-lg backdrop-saturate-150 shadow-md transition-all duration-300 hover:shadow-yellow-400/40 hover:border-yellow-300/30 hover:text-yellow-300`}
+            className={`${Roboto_font.className}  ${PagesStyles.repoContainer}`}
           >
             <RepoImage repoName={repo.name} />
 

@@ -11,9 +11,9 @@ export default function Home() {
     <div>
       <CustomRippleCursor />
       <main className={`${PagesStyles.mainContainer} animate-fade-in-up`}>
-        <div className="w-full max-w-5xl mx-auto flex flex-col items-center justify-center p-6 sm:p-10 bg-white/1 backdrop-blur-lg border border-white/20 rounded-2xl shadow-md">
+        <div className={`${PagesStyles.generalGlassmorphism}`}>
           <div className="flex flex-col lg:flex-row w-full max-w-3xl gap-8 gap-y-12 mb-10 ">
-            <div className="w-56 h-56 bg-white/2 backdrop-blur-lg border border-white/10 rounded-full flex items-center justify-center shadow-md mx-auto lg:mx-0 overflow-hidden">
+            <div className={`${PagesStyles.profileImageContainer}`}>
               <img
                 src="https://github.com/xscriptorcode.png"
                 alt="Foto de perfil"
@@ -29,8 +29,8 @@ export default function Home() {
                   revealDirection="center"
                   speed={90}
                   maxIterations={60}
-                  encryptedClassName="text-red-500 animate-pulse"
-                  parentClassName="text-2xl tracking-wide"
+                  encryptedClassName={`${PagesStyles.encryptedClassNameTexts}`}
+                  parentClassName={`${PagesStyles.parentClassNameTexts}`}
                 />
                 <DecryptedText
                   text="|"
@@ -39,8 +39,8 @@ export default function Home() {
                   revealDirection="center"
                   speed={90}
                   maxIterations={60}
-                  encryptedClassName="text-red-500 animate-pulse"
-                  parentClassName="text-2xl  tracking-wide"
+                  encryptedClassName={`${PagesStyles.encryptedClassNameTexts}`}
+                  parentClassName={`${PagesStyles.parentClassNameTexts}`}
                 />
                 <DecryptedText
                   text="Code"
@@ -49,8 +49,8 @@ export default function Home() {
                   revealDirection="center"
                   speed={90}
                   maxIterations={60}
-                  encryptedClassName="text-red-500 animate-pulse"
-                  parentClassName="text-2xl tracking-wide"
+                  encryptedClassName={`${PagesStyles.encryptedClassNameTexts}`}
+                  parentClassName={`${PagesStyles.parentClassNameTexts}`}
                 />
               </h1>
               <h1 className={`${PagesStyles.titles} ${Roboto_font.className}  hidden lg:block absolute top-15 right-120`}>
@@ -61,8 +61,8 @@ export default function Home() {
                   revealDirection="center"
                   speed={90}
                   maxIterations={40}
-                  encryptedClassName="text-red-500 animate-pulse"
-                  parentClassName="text-2xl lg:text-4xl  tracking-wide"
+                  encryptedClassName={`${PagesStyles.encryptedClassNameTexts}`}
+                  parentClassName={`${PagesStyles.smallParentClassName}`}
                 />
                 <DecryptedText
                   text="|"
@@ -71,8 +71,8 @@ export default function Home() {
                   revealDirection="center"
                   speed={90}
                   maxIterations={40}
-                  encryptedClassName="text-red-500 animate-pulse"
-                  parentClassName="text-2xl lg:text-4xl tracking-wide"
+                  encryptedClassName={`${PagesStyles.encryptedClassNameTexts}`}
+                  parentClassName={`${PagesStyles.smallParentClassName}`}
                 />
                 <DecryptedText
                   text="Code"
@@ -81,11 +81,11 @@ export default function Home() {
                   revealDirection="center"
                   speed={90}
                   maxIterations={40}
-                  encryptedClassName="text-red-500 animate-pulse"
-                  parentClassName="text-2xl lg:text-4xl tracking-wide"
+                  encryptedClassName={`${PagesStyles.encryptedClassNameTexts}`}
+                  parentClassName={`${PagesStyles.smallParentClassName}`}
                 />
               </h1>
-              <p className={`text-sm lg:text-base mt-1 lg:mt-5 text-right ${Roboto_font.className}`}>
+              <p className={`${PagesStyles.pdescriptionClassName} ${Roboto_font.className}`}>
                 <DecryptedText
                   text="I’m a developer focused on clean architecture, UI/UX consistency, and interactive design. I build responsive web apps and sometimes I colaborate creating software. I prioritize component-based architecture, performance, and scalable code using TypeScript."
                   animateOn="view"
@@ -93,8 +93,8 @@ export default function Home() {
                   revealDirection="center"
                   speed={1}
                   maxIterations={5}
-                  encryptedClassName="text-red-500 animate-pulse"
-                  className="text-white transition-colors duration-300"
+                  encryptedClassName={`${PagesStyles.encryptedClassNameTexts}`}
+                  className={`${PagesStyles.descriptionClassName}`}
                   parentClassName="tracking-wide"
                 />
               </p>
@@ -113,9 +113,9 @@ export default function Home() {
 
             <a
               href="/contact"
-              className="inline-block mt-6 px-5 py-2  bg-white/6 backdrop-blur-lg border border-white/20 rounded-full  text-amber-50 font-medium hover:bg-amber-50 hover:text-black transition"
+              className={`${PagesStyles.homeContactButton}`}
             >
-              Let’s talk
+              Let&rsquo;s talk
             </a>
           </div>
         </div>
