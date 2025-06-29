@@ -8,6 +8,7 @@ export default function RepoImage({ repoName }: RepoImageProps) {
   const fallback = `https://opengraph.githubassets.com/1/xscriptorcode/${repoName}`;
 
   return (
+    /* eslint-disable-next-line @next/next/no-img-element */
     <img
       src={`https://raw.githubusercontent.com/xscriptorcode/${repoName}/main/screenshots/preview.png`}
       alt={`Preview de ${repoName}`}
