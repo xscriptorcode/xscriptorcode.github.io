@@ -15,6 +15,7 @@ export const PagesStyles = {
     /*Pages */
     /* Home */
     generalGlassmorphism: "w-full max-w-5xl mx-auto flex flex-col items-center justify-center p-6 sm:p-10 bg-white/1 backdrop-blur-lg border border-white/20 rounded-2xl shadow-md",
+    profileImageContainer: "w-56 h-56 bg-white/2 backdrop-blur-lg border border-white/10 rounded-full flex items-center justify-center shadow-md mx-auto lg:mx-0 overflow-hidden",
     encryptedClassNameTexts: "text-red-500 animate-pulse",
     parentClassNameTexts: "text-2xl tracking-wide",
     smallParentClassName:"text-2xl lg:text-4xl tracking-wide",
@@ -22,4 +23,13 @@ export const PagesStyles = {
     descriptionClassName: "text-white transition-colors duration-300",
     homeContactButton: "inline-block mt-6 px-5 py-2  bg-white/6 backdrop-blur-lg border border-white/20 rounded-full  text-amber-50 font-medium hover:bg-amber-50 hover:text-black transition",
     
+    /*Repos */
+    projetsGrid: "animate-fade-in-up grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto px-4",
+    repoContainer: "text-gray-200 rounded-2xl p-8 border border-white/10 bg-white/10 backdrop-blur-lg backdrop-saturate-150 shadow-md transition-all duration-300 hover:shadow-yellow-400/40 hover:border-yellow-300/30 hover:text-yellow-300",
+
+    /*Contact */
+    contacSocialIcons: "flex items-center justify-center gap-2 w-60 px-4 py-2 text-white bg-white/10 border border-white/20 backdrop-blur-lg rounded-full shadow-md transition-colors duration-300 hover:text-yellow-400",
+
+    /*Portfolio */
+    ulStyles: "list-disc pl-5 mt-1",
 };

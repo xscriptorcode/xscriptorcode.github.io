@@ -13,7 +13,7 @@ export default function Home() {
       <main className={`${PagesStyles.mainContainer} animate-fade-in-up`}>
         <div className={`${PagesStyles.generalGlassmorphism}`}>
           <div className="flex flex-col lg:flex-row w-full max-w-3xl gap-8 gap-y-12 mb-10 ">
-            <div className="w-56 h-56 bg-white/2 backdrop-blur-lg border border-white/10 rounded-full flex items-center justify-center shadow-md mx-auto lg:mx-0 overflow-hidden">
+            <div className={`${PagesStyles.profileImageContainer}`}>
               <img
                 src="https://github.com/xscriptorcode.png"
                 alt="Foto de perfil"

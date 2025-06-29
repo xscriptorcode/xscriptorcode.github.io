@@ -1,4 +1,5 @@
 import { Timeline } from "@/app/components/timeline";
+import { PagesStyles } from "./pagesstyles";
 //import { PagesStyles } from "./pagesstyles";
 
 export function PortfolioTimeline() {
@@ -11,10 +12,10 @@ export function PortfolioTimeline() {
           <ul className="list-disc pl-5 text-sm text-neutral-400">
             <li>
               ✔ Complete Windows and Linux servers management
-              <ul className="list-disc pl-5 mt-1">
+              <ul className={`${PagesStyles.ulStyles}`}>
                 <li>
                   ▲ Credentials management
-                  <ul className="list-disc pl-5 mt-1">
+                  <ul className={`${PagesStyles.ulStyles}`}>
                     <li>
                       Centralized user and group control (Active Directory,
                       LDAP)
@@ -28,7 +29,7 @@ export function PortfolioTimeline() {
                 </li>
                 <li>
                   ▲ Information security
-                  <ul className="list-disc pl-5 mt-1">
+                  <ul className={`${PagesStyles.ulStyles}`}>
                     <li>Regular OS patching and vulnerability management</li>
                     <li>Firewall configuration and port hardening</li>
                     <li>
@@ -39,7 +40,7 @@ export function PortfolioTimeline() {
                 </li>
                 <li>
                   ▲ Connectivity and networking
-                  <ul className="list-disc pl-5 mt-1">
+                  <ul className={`${PagesStyles.ulStyles}`}>
                     <li>Static IP/DNS setup and DHCP reservation</li>
                     <li>
                       VPN server setup and maintenance (WireGuard, OpenVPN)
@@ -55,11 +56,11 @@ export function PortfolioTimeline() {
           <ul className="list-disc pl-5 text-sm text-neutral-400">
             <li>
               ✔ Database administration and migration to Odoo (formerly OpenERP)
-              <ul className="list-disc pl-5 mt-1">
+              <ul className={`${PagesStyles.ulStyles}`}>
                 <li>
                   ▲ Legacy database administration (PostgreSQL, MySQL,
                   Oracle...)
-                  <ul className="list-disc pl-5 mt-1">
+                  <ul className={`${PagesStyles.ulStyles}`}>
                     <li>
                       Installation, configuration, and user access control
                     </li>
@@ -69,7 +70,7 @@ export function PortfolioTimeline() {
                 </li>
                 <li>
                   ▲ Migration process toward Odoo
-                  <ul className="list-disc pl-5 mt-1">
+                  <ul className={`${PagesStyles.ulStyles}`}>
                     <li>Assessment of legacy systems and ERP alternatives</li>
                     <li>Mapping fields and cleansing inconsistent data</li>
                     <li>
@@ -79,7 +80,7 @@ export function PortfolioTimeline() {
                 </li>
                 <li>
                   ▲ Odoo deployment and data integration
-                  <ul className="list-disc pl-5 mt-1">
+                  <ul className={`${PagesStyles.ulStyles}`}>
                     <li>Setting up Odoo with PostgreSQL as the backend</li>
                     <li>Installing essential and custom business modules</li>
                     <li>Importing data via CSV, XML or direct SQL scripts</li>
@@ -101,7 +102,7 @@ export function PortfolioTimeline() {
           <ul className="list-disc pl-5 mt-1 text-sm text-neutral-400">
             <li>
               ▲ Big Data and financial analytics
-              <ul className="list-disc pl-5 mt-1">
+              <ul className={`${PagesStyles.ulStyles}`}>
                 <li>
                   Real-time aggregation of market feeds and historical data
                 </li>
@@ -121,7 +122,7 @@ export function PortfolioTimeline() {
             </li>
             <li>
               ▲ Graphical data interpretation
-              <ul className="list-disc pl-5 mt-1">
+              <ul className={`${PagesStyles.ulStyles}`}>
                 <li>
                   Technical chart reading (candlesticks, RSI, MACD, Bollinger
                   Bands)
@@ -137,7 +138,7 @@ export function PortfolioTimeline() {
             </li>
             <li>
               ▲ Market perspective & forecasting
-              <ul className="list-disc pl-5 mt-1">
+              <ul className={`${PagesStyles.ulStyles}`}>
                 <li>
                   Macro and microeconomic impact analysis on portfolio exposure
                 </li>
@@ -152,7 +153,7 @@ export function PortfolioTimeline() {
             </li>
             <li>
               ▲ Confidential data governance
-              <ul className="list-disc pl-5 mt-1">
+              <ul className={`${PagesStyles.ulStyles}`}>
                 <li>
                   Secure storage and encryption of portfolio allocation data
                 </li>
@@ -179,7 +180,7 @@ export function PortfolioTimeline() {
           <ul className="list-disc pl-5 text-sm text-neutral-400">
             <li>
               ▲ Troubleshooting and signal diagnostics
-              <ul className="list-disc pl-5 mt-1">
+              <ul className={`${PagesStyles.ulStyles}`}>
                 <li>
                   Detection and resolution of incidents on landline and mobile
                   networks
@@ -195,7 +196,7 @@ export function PortfolioTimeline() {
             </li>
             <li>
               ▲ Customer data and database administration
-              <ul className="list-disc pl-5 mt-1">
+              <ul className={`${PagesStyles.ulStyles}`}>
                 <li>
                   Query, update, and validation of customer data in internal
                   systems
@@ -211,7 +212,7 @@ export function PortfolioTimeline() {
             </li>
             <li>
               ▲ Signal routing and service provisioning
-              <ul className="list-disc pl-5 mt-1">
+              <ul className={`${PagesStyles.ulStyles}`}>
                 <li>
                   Configuration of routing tables and signal paths for new
                   connections
@@ -225,7 +226,7 @@ export function PortfolioTimeline() {
             </li>
             <li>
               ▲ Security and compliance checks
-              <ul className="list-disc pl-5 mt-1">
+              <ul className={`${PagesStyles.ulStyles}`}>
                 <li>Routine security audits on customer-accessible systems</li>
                 <li>
                   Verification of user permissions and protection of sensitive
@@ -239,7 +240,7 @@ export function PortfolioTimeline() {
             </li>
             <li>
               ▲ Product testing and reporting
-              <ul className="list-disc pl-5 mt-1">
+              <ul className={`${PagesStyles.ulStyles}`}>
                 <li>
                   Functional validation of new telecom products before public
                   release

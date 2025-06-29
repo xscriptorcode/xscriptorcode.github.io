@@ -28,7 +28,7 @@ export default function Contact() {
               revealDirection="center"
               speed={90}
               maxIterations={60}
-              encryptedClassName="text-red-500 animate-pulse"
+              encryptedClassName={`${PagesStyles.encryptedClassNameTexts}`}
               parentClassName="text-2xl tracking-wide"
             />
           </h1>
@@ -43,7 +43,7 @@ export default function Contact() {
               revealDirection="center"
               speed={30}
               maxIterations={30}
-              encryptedClassName="text-red-500 animate-pulse"
+              encryptedClassName={`${PagesStyles.encryptedClassNameTexts}`}
               parentClassName="text-2xl tracking-wide"
             />
           </h2>
@@ -52,7 +52,7 @@ export default function Contact() {
           <a
             href="https://t.me/xscriptor"
             target="_blank"
-            className="flex items-center justify-center gap-2 w-60 px-4 py-2 text-white bg-white/10 border border-white/20 backdrop-blur-lg rounded-full shadow-md transition-colors duration-300 hover:text-yellow-400"
+            className={`${PagesStyles.contacSocialIcons}`}
           >
             Telegram <TelegramIcon />
           </a>
@@ -60,7 +60,7 @@ export default function Contact() {
           <a
             href="https://instagram.com/xscriptorcode"
             target="_blank"
-            className="flex items-center justify-center gap-2 w-60 px-4 py-2 text-white bg-white/10 border border-white/20 backdrop-blur-lg rounded-full shadow-md transition-colors duration-300 hover:text-yellow-400"
+            className={`${PagesStyles.contacSocialIcons}`}
           >
             Instagram (Xcode) <InstagramIcon />
           </a>
@@ -68,7 +68,7 @@ export default function Contact() {
           <a
             href="https://wa.me/34666938748?text=Hello!"
             target="_blank"
-            className="flex items-center justify-center gap-2 w-60 px-4 py-2 text-white bg-white/10 border border-white/20 backdrop-blur-lg rounded-full shadow-md transition-colors duration-300 hover:text-yellow-400"
+            className={`${PagesStyles.contacSocialIcons}`}
           >
             WhatsApp <WhatsappIcon />
           </a>
@@ -76,7 +76,7 @@ export default function Contact() {
           <a
             href="https://instagram.com/xscriptor"
             target="_blank"
-            className="flex items-center justify-center gap-2 w-60 px-4 py-2 text-white bg-white/10 border border-white/20 backdrop-blur-lg rounded-full shadow-md transition-colors duration-300 hover:text-yellow-400"
+            className={`${PagesStyles.contacSocialIcons}`}
           >
             Instagram (Xscriptor) <InstagramIcon />
           </a>
@@ -84,7 +84,7 @@ export default function Contact() {
           <a
             href="https://github.com/xscriptorcode"
             target="_blank"
-            className="flex items-center justify-center gap-2 w-60 px-4 py-2 text-white bg-white/10 border border-white/20 backdrop-blur-lg rounded-full shadow-md transition-colors duration-300 hover:text-yellow-400"
+            className={`${PagesStyles.contacSocialIcons}`}
           >
             GitHub <GithubIcon />
           </a>
