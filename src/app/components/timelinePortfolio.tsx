@@ -1,4 +1,5 @@
 import { Timeline } from "@/app/components/timeline";
+//import { PagesStyles } from "./pagesstyles";
 
 export function PortfolioTimeline() {
   const data = [
@@ -255,23 +256,46 @@ export function PortfolioTimeline() {
       ),
     },
 
-    /*
     {
-      title: "2025",
+      title: "Present",
       content: (
         <div>
-          <p className="text-neutral-300 mb-2">
-            TFG terminado y portfolio desplegado.
-          </p>
-          <img
-            src="/images/portfolio-preview.png"
-            className="rounded-lg w-full h-auto shadow-md"
-            alt="captura del portfolio"
-          />
+          <h1 className="text-yellow-200">X development</h1>
+          <ul className="list-disc pl-5 text-neutral-800 dark:text-neutral-200 text-sm md:text-base space-y-2">
+            <li>
+              Completed an{" "}
+              <strong>
+                Advanced Technical Degree in Web Application Development
+              </strong>
+              , focused on frontend, backend, databases, and cross-platform
+              apps.
+            </li>
+            <li>
+              Earned a certification from the{" "}
+              <strong>Universitat Autònoma de Barcelona</strong> in Digital
+              Humanities.
+            </li>
+            <li>
+              Earned certifications from <strong>Google</strong> in IT Security
+              and Technical Support Fundamentals.
+            </li>
+            <li>
+              Earned multiple certifications on <strong>Coursera</strong> and{" "}
+              <strong>OpenWebinars</strong> in React, web security, backend
+              development, project management, CSS, Tailwind, and JavaScript.
+            </li>
+            <li>
+              Worked as a <strong>freelance web administrator</strong>,
+              maintaining and optimizing websites for small businesses.
+            </li>
+            <li>
+              Another projects development: <strong>Xscriptor — Xliterato — Xscriptorcode{""}</strong>,
+              art literature and programming portfolios.
+            </li>
+          </ul>
         </div>
       ),
     },
-    */
   ];
 
   return (

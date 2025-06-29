@@ -41,6 +41,12 @@ Here you will find the icons used for general purposes throughout the web app.
 
 * SkillNetwork.tsx — Handles the logic for the skill map (points and connecting lines). Also controls responsive behavior on mobile screens.
 
+* timeline.tsx — Controls the behavior of the timeline of the portfolio.
+
+* timelinePortfolio.tsx — Contains all of the information about the timeline of experience for the portfolio.
+
 Also, I defined:
 
 * iconStyles.ts — This file centralizes the customization of the navbar and contactpage icon styles, making it easier to maintain.
+
+Pages:
