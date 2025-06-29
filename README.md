@@ -6,15 +6,10 @@ First of all, there are some folders that organize the infrastructure, following
 Here you will find the icons used in the navbar, created as components to make it easier to reuse them in other contexts.
 
 * ContactIcon.tsx
-
 * GithubIcon.tsx
-
 * HomeIcon.tsx
-
 * PortfolioIcon.tsx
-
 * ResourcesIcon.tsx
-
 * XscriptorIcon.tsx
 
 ### pageicons:
@@ -49,4 +44,10 @@ Also, I defined:
 
 * iconStyles.ts — This file centralizes the customization of the navbar and contactpage icon styles, making it easier to maintain.
 
-Pages:
+## Pages:
+* Home — Personal presentation.
+* Repos — List of repos on github with preview.
+* Contact — To stablish direct contact to materialize projects.
+* Portfolio — Experience and knowledge.
+* Resources — Resources that could be used for anyone.
+* X — Link to my main page xscriptor.com
